@@ -147,7 +147,7 @@ class List {
         }
 
         // Count number of elements in list
-        int size() {
+        int size() const {
             int count = 0;
 
             for( ListNode<T>* cur = mHead; cur != NULL; cur = cur->next ) {
@@ -158,7 +158,7 @@ class List {
         }
 
         // Spit out contents as a string for verification
-        std::string contents() {
+        std::string contents() const {
             std::ostringstream sout;
             for( ListNode<T>* cur = mHead; cur != NULL; cur = cur->next ) {
                 sout << cur->value << ", ";
